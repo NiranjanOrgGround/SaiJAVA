@@ -14,7 +14,7 @@ public class TestGreeter {
 
   @Before
   public void setup() {
-    greeter = new Greeter();
+    // greeter = new Greeter(); // Commenting this out will result in a NullPointerException in the tests
   }
 
   @Test
@@ -31,3 +31,4 @@ public class TestGreeter {
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 }
+
